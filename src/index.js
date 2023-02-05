@@ -6,11 +6,13 @@ import './App.css';
 import Main from './components/Main';
 import Table from './components/Table';
 import Comments from './components/Comments';
+import Error from './components/Error';
 
 const appRouter = createBrowserRouter([
   {
     path: '/',
     element: <Main />,
+    errorElement: <Error />,
   },
   {
     path: '/grid',
